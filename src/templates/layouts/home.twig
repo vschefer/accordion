@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        {% include "../includes/head.twig" %}
+        {% include "../includes/styles.twig" %}
+        {% block styles %}{% endblock %}
+    </head>
+    <body class="b-page b-page--home">
+        {% include "../includes/header.twig" %}
+
+        <div class="b-content">
+            {% block content %}
+                {% include "../components/accordion.twig" %}
+            {% endblock %}
+        </div>
+
+        {% include "../includes/footer.twig" %}
+
+        {% block scripts %}{% endblock %}
+        {% include "../includes/scripts.twig" %}
+    </body>
+</html>

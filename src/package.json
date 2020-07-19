@@ -1,0 +1,49 @@
+{
+  "name": "frontend_trial",
+  "email": "test@koch-k.ch",
+  "description": "Frontend Trial",
+  "version": "1.0.0",
+  "keywords": [
+    "trial"
+  ],
+  "homepage": "https://www.koch-k.ch",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/kochkommunikation/frontend_trial"
+  },
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "browser-sync": "^2.26.7",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-include": "^2.4.1",
+    "gulp-load-plugins": "^2.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-twig": "^1.2.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "gulp-w3c-html-validator": "^1.4.4",
+    "postcss-scss": "^2.0.0",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "firefox esr"
+  ],
+  "dependencies": {
+    "baseguide": "^3.3.0",
+    "gulp-cli": "^2.2.0"
+  }
+}

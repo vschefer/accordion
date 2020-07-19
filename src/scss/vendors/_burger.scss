@@ -1,0 +1,18 @@
+$hamburger-class-name: 'b-burger';
+$hamburger-size: 36px;
+$hamburger-thickness: 2px;
+$hamburger-color: currentColor;
+$hamburger-bar-spacing: 8px;
+$hamburger-animations: (
+    collapse
+);
+
+@import 'hamburger/hamburger';
+
+.#{$hamburger-class-name} {
+    margin: -$hamburger-bar-spacing 0;
+
+    .inner {
+        display: block;
+    }
+}

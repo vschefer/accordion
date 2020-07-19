@@ -1,0 +1,42 @@
+.calendar__listitem {
+  border-top: 1px solid black;
+}
+
+.calendar__item {
+  display: flex;
+}
+
+.item__date {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.item__date-day {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.item__content {
+  padding-left: 1.5rem;
+  margin-left: 1.5rem;
+  border-left: 1px solid black;
+}
+
+.content__adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.content__partytype {
+  display: flex;
+}
+
+.party__type {
+  width: 2rem;
+  height: 2rem;
+}

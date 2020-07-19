@@ -1,0 +1,91 @@
+.b-footer {
+    position: relative;
+    overflow: hidden; // hide first border
+    background-color: $footer-bg;
+    color: $footer-color;
+
+    p a:not([class]) {
+        background: transparent;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: $footer-link-hover-color;
+            text-decoration: none;
+        }
+    }
+
+    @include mq(lg) {
+        .b-menu-social__list {
+            justify-content: flex-end;
+        }
+    }
+}
+
+.b-footer__section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @include mq(lg) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.b-footer__section--default {
+    font-size: to-rem(14px);
+}
+
+.b-footer__section--small {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: to-rem(12px);
+}
+
+.b-footer__section--border {
+    @include mq($until: lg) {
+        border-top: 1px solid transparentize($footer-color, 0.85);
+        margin-top: -1px;
+    }
+}
+
+.b-footer__location {
+    display: inline-block;
+    align-self: flex-start;
+    margin: -1rem;
+    padding: 1rem;
+    color: transparentize(#eaeaea, 0.5);
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.b-footer__logo {
+    margin-bottom: 1rem;
+
+    @include mq($until: lg) {
+        img,
+        svg {
+            width: 100%;
+        }
+    }
+}
+
+.b-footer__creator {
+    a {
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            color: $footer-link-hover-color;
+            text-decoration: none;
+        }
+    }
+
+    @include mq(md) {
+        text-align: right;
+    }
+}

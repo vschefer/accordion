@@ -1,0 +1,16 @@
+.b-section {
+    position: relative;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+
+    @include mq(xl) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.b-section--default + .b-section--default,
+.b-section--primary + .b-section--primary,
+.b-section--secondary + .b-section--secondary {
+    padding-top: 0;
+}

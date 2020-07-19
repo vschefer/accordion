@@ -1,0 +1,60 @@
+.b-menu-social {
+    margin: -0.5rem;
+}
+
+.b-menu-social__list {
+    @include list-inline;
+
+    a {
+        display: inline-block;
+        padding: 0.5rem;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $link-hover-color;
+        }
+    }
+
+    svg {
+        overflow: visible;
+    }
+
+    &--narrow {
+        li {
+            margin-left: 0.3rem;
+        }
+    }
+
+    .pusha-panel--sites & {
+        a {
+            &:hover,
+            &:focus {
+                color: $panel-sites-link-hover-color;
+            }
+        }
+    }
+
+    .pusha-panel--navigation & {
+        a {
+            &:hover,
+            &:focus {
+                color: $panel-navigation-link-hover-color;
+            }
+        }
+    }
+
+    .b-footer & {
+        a {
+            &:hover,
+            &:focus {
+                color: $footer-link-hover-color;
+            }
+        }
+    }
+}
+
+.b-menu-social__list--centered {
+    justify-content: center;
+}

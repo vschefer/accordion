@@ -1,0 +1,12 @@
+#{$headings} {
+    text-transform: $headings-text-transform;
+    letter-spacing: normal;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include mq($until: lg) {
+    @include scale-headings(4);
+}

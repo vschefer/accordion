@@ -1,0 +1,14 @@
+.b-menu-footer__list {
+    @include list-inline;
+
+    a {
+        display: inline-block;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $footer-link-hover-color;
+        }
+    }
+}
